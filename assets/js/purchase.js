@@ -13,7 +13,7 @@ dataLayer.push({
 var buttons = document.getElementsByClassName("Course");
 var gtmFunction = function() {
 	dataLayer.push({
-		'couseID': courseID,
+		'courseID': courseID,
 		'courseName':courseName,
 		'coursePrice':coursePrice,
 		'event': 'customPurchase'
