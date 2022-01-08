@@ -4,7 +4,7 @@ var courseName=document.currentScript.getAttribute('courseName');
 var coursePrice=Number(document.currentScript.getAttribute('coursePrice'));
 
 dataLayer.push({
-	'courseID': courseID,
+	'couseID': courseID,
 	'courseName':courseName,
 	'coursePrice':coursePrice,
 	'event': 'customView'
