@@ -7,7 +7,8 @@ dataLayer.push({
 	'courseID': courseID,
 	'courseName':courseName,
 	'coursePrice':coursePrice,
-	'event': 'customView'
+	'event': 'customView',
+	'courseItems':[{'id':courseID,'google_business_vertical':'retail'}]
   });
 
 var buttons = document.getElementsByClassName("Course");
@@ -16,7 +17,8 @@ var gtmFunction = function() {
 		'courseID': courseID,
 		'courseName':courseName,
 		'coursePrice':coursePrice,
-		'event': 'customPurchase'
+		'event': 'customPurchase',
+		'courseItems':[{'id':courseID,'google_business_vertical':'retail'}]
 	  });
 	};
 for (var i = 0; i < buttons.length; i++) {
