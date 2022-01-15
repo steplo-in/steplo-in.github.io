@@ -1,5 +1,5 @@
 
-var courseID=document.currentScript.getAttribute('courseID');
+var courseID=Number(document.currentScript.getAttribute('courseID'));
 var courseName=document.currentScript.getAttribute('courseName');
 var coursePrice=Number(document.currentScript.getAttribute('coursePrice'));
 
