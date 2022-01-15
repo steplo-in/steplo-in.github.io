@@ -25,7 +25,6 @@ var gtmFunction = function() {
 		'ecomItems':[{'item_id':courseID,"item_name":courseName}],
 		'purchaseTransactionId':"T_".concat((Math.random() + 1).toString(36).substring(7)).concat(Date.now()).concat((Math.random() + 1).toString(36).substring(7))
 	  });
-	  console.log(dataLayer)
 	};
 for (var i = 0; i < buttons.length; i++) {
 		buttons[i].addEventListener('click', gtmFunction, false);
