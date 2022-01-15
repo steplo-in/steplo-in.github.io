@@ -1,26 +1,28 @@
 
-var courseID=Number(document.currentScript.getAttribute('courseID'));
+var courseID=document.currentScript.getAttribute('courseID');
 var courseName=document.currentScript.getAttribute('courseName');
 var coursePrice=Number(document.currentScript.getAttribute('coursePrice'));
 
 dataLayer.push({
+	'event': 'customView',
 	'courseID': courseID,
 	'courseName':courseName,
 	'coursePrice':coursePrice,
-	'event': 'customView',
+	'courseCurrency':'INR',
 	'courseItems':[{'id':courseID,'google_business_vertical':'retail'}],
-	'ecomItems':[{'item_id':courseID,"item_name":courseName,"quantity":1,"price":coursePrice}]
+	'ecomItems':[{'item_id':courseID,"item_name":courseName}]
   });
 
 var buttons = document.getElementsByClassName("Course");
 var gtmFunction = function() {
 	dataLayer.push({
+		'event': 'customPurchase',
 		'courseID': courseID,
 		'courseName':courseName,
 		'coursePrice':coursePrice,
-		'event': 'customPurchase',
+		'courseCcurrency':'INR',
 		'courseItems':[{'id':courseID,'google_business_vertical':'retail'}],
-		'ecomItems':[{'item_id':courseID,"item_name":courseName,"quantity":1,"price":coursePrice}]
+		'ecomItems':[{'item_id':courseID,"item_name":courseName}]
 	  });
 	};
 for (var i = 0; i < buttons.length; i++) {
