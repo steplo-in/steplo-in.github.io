@@ -1,6 +1,5 @@
 
 var course=document.currentScript.getAttribute('course');
-console.log(course)
 var baseLink=""
 if(course=="English"){
 	baseLink="https://api.whatsapp.com/send?phone=918618539841&text=Book%20My%20FREE%20Seat%20%3CEFIRST100%3E"
@@ -18,7 +17,6 @@ var attributionCode=first5.concat(last2)
 var whatsappCode="%20%3C".concat(attributionCode).concat("%3E")
 
 var whatsApplink=baseLink.concat(whatsappCode)
-console.log(whatsApplink)
 
 var aTags = document.getElementsByClassName("aTag");
 for (var i = 0; i < aTags.length; i++) {
