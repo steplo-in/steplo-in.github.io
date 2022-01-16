@@ -10,7 +10,8 @@ dataLayer.push({
 	'coursePrice':coursePrice,
 	'courseCurrency':'INR',
 	'courseItems':[{'id':courseID,'google_business_vertical':'retail'}],
-	'ecomItems':[{'item_id':courseID,"item_name":courseName}]
+	'ecomItems':[{'item_id':courseID,"item_name":courseName,'currency':'INR','price':coursePrice,'quantity':1}],
+
   });
 
 var buttons = document.getElementsByClassName("Course");
@@ -22,7 +23,7 @@ var gtmFunction = function() {
 		'coursePrice':coursePrice,
 		'courseCcurrency':'INR',
 		'courseItems':[{'id':courseID,'google_business_vertical':'retail'}],
-		'ecomItems':[{'item_id':courseID,"item_name":courseName}],
+		'ecomItems':[{'item_id':courseID,"item_name":courseName,'currency':'INR','price':coursePrice,'quantity':1}],
 		'purchaseTransactionId':"T_".concat((Math.random() + 1).toString(36).substring(7)).concat(Date.now()).concat((Math.random() + 1).toString(36).substring(7))
 	  });
 	};
