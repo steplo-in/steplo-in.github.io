@@ -2,9 +2,9 @@
 var course=document.currentScript.getAttribute('course');
 var baseLink=""
 if(course=="English"){
-	baseLink="https://api.whatsapp.com/send?phone=918618539841&text=Book%20My%20FREE%20Seat%20%3CEFIRST100%3E"
+	baseLink="https://api.whatsapp.com/send?phone=918197853602&text=Book%20My%20FREE%20Seat%20%3CEFIRST100%3E"
 }else if(course=="Knitting"){
-	baseLink="https://api.whatsapp.com/send?phone=918618539841&text=Book%20My%20FREE%20Seat%20%3CKFIRST100%3E"
+	baseLink="https://api.whatsapp.com/send?phone=918197853602&text=Book%20My%20FREE%20Seat%20%3CKFIRST100%3E"
 }
 var transactionID="T_".concat((Math.random() + 1).toString(36).substring(7)).concat(Date.now()).concat((Math.random() + 1).toString(36).substring(7))
 
